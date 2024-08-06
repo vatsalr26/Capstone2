@@ -1,0 +1,182 @@
+/* Apply a dark blue gradient background to the body */
+body {
+    font-family: "Orbitron", sans-serif; /* Futuristic font */
+    margin: 50px 50px 0 50px;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff; /* White text for better contrast */
+    display: flex;
+    flex-direction: column;
+    min-height: 95vh;
+}
+
+/* Main container styling */
+.main {
+    flex: 1;
+    text-align: center;
+}
+
+/* Header styling */
+h1 {
+    font-size: 3rem;
+}
+
+/* Card styling */
+.card {
+    width: 45%;
+    background-color: #333; /* Dark background for cards */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Stronger shadow for better contrast */
+    margin: 20px;
+    padding: 20px;
+    float: left; /* Ensure floating is handled properly */
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.creative {
+    color: #4facfe; /* Light blue for contrast */
+}
+
+/* Image styling */
+.tile-image {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover; /* Ensure images cover the space */
+}
+
+/* Achievements container styling */
+.achievements-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin: 20px;
+    padding: 20px;
+    background-color: #444; /* Dark background for better readability */
+    border-radius: 10px;
+}
+
+.favorite-sport {
+    text-align: center;
+}
+
+/* My Achievements section styling */
+.my-achievements {
+    text-align: left; /* Align text to the left for better readability */
+}
+
+.my-achievements h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.my-achievements ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    list-style-type: disc;
+    padding-left: 20px; /* Adjusted for consistency */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+/* About me section styling */
+.about-me {
+    margin: 20px;
+    padding: 20px;
+    background-color: #444; /* Dark background for better readability */
+    border-radius: 10px;
+}
+
+.about-me h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-me p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+/* My Skills section styling */
+.my-skills {
+    margin: 20px;
+    padding: 20px;
+    background-color: #444; /* Dark background for better readability */
+    border-radius: 10px;
+}
+
+.my-skills h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.my-skills p, .my-skills ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.my-skills ul {
+    list-style-type: disc;
+    padding-left: 20px; /* Adjusted for consistency */
+    text-align: left; /* Align text to the left for better readability */
+}
+
+/* Contact me section styling */
+.contact-me {
+    margin: 20px;
+    padding: 20px;
+}
+
+.contact-me h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-me a {
+    margin: 0 15px;
+    color: #4facfe; /* Light blue for contrast */
+    text-decoration: none;
+}
+
+.contact-me i {
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.contact-me i:hover {
+    transform: scale(1.2); /* Scale effect on hover */
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 680px) {
+    .logo {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .card {
+        width: 100%;
+        display: block;
+        margin-bottom: 30px;
+        text-align: justify;
+    }
+
+    .card img {
+        margin-bottom: 10px;
+        width: 100%;
+        display: inline;
+        object-fit: cover;
+    }
+
+    .achievements-container {
+        grid-template-columns: 1fr; /* Stack achievements and sport image vertically */
+    }
+}
